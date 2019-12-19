@@ -27,4 +27,9 @@ generate_stan_code <- function(stan_model) {
         paste0(collapse='\n')
 }
 
+unparse_data_block <- function(declaration = "", name = "", minimum = "", maximum = "", length = "") {
+    paste0(declaration, "<lower=", minimum, 
+           ",upper=", maximum, "> ", name,
+           length, ";")
+}
 
