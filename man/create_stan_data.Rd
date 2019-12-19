@@ -15,3 +15,9 @@ create_stan_data(data, ...)
 This function creates a data object 
 to be used in Stan
 }
+\examples{
+df <- data.frame(test = c(rep("dog", 5), rep("cat", 6)))
+df <- create_index(df, k = test)
+df <- create_stan_data(df, k)
+
+}
