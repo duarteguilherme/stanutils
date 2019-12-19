@@ -15,3 +15,7 @@ create_index(data, ...)
 This function creates numeric index for variables
 inside a tibble
 }
+\examples{
+df <- data.frame(test = c(rep("dog", 5), rep("cat", 6)))
+create_index(df, k = test)
+}
