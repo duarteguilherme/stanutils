@@ -30,7 +30,12 @@ create_index <- function(data, ...) {
 #' @param data tibble or data.frame object
 #' @param ... index
 #' 
-#' 
+#' @examples
+#' df <- data.frame(test = c(rep("dog", 5), rep("cat", 6)))
+#' df <- create_index(df, k = test)
+#' df <- create_stan_data(df, k)
+#'
+#' @export
 create_stan_data <- function(data, ...) {
     cols <- enexprs(...) 
     col_names <- purrr::as_vector(purrr::map(cols, as.character))
