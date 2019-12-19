@@ -7,7 +7,7 @@
 #'
 #' @importFrom purrr imap
 #' @export
-create_date_block <- function(stan_data) {
+create_data_block <- function(stan_data) {
    imap(stan_data, ~ create_declaration(.x, .y))  %>%
        paste0(collapse = "\n")
 }
