@@ -2,7 +2,7 @@
 % Please edit documentation in R/automatize-data-block.R
 \name{create_model_from_data}
 \alias{create_model_from_data}
-\title{Automatize creation of data block}
+\title{Automatize creation of data blocks}
 \usage{
 create_model_from_data(stan_data)
 }
