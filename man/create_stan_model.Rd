@@ -6,6 +6,13 @@
 \usage{
 create_stan_model(data = list(), parameters = list(), model = list())
 }
+\arguments{
+\item{data}{List of data declarations}
+
+\item{parameters}{List of parameters}
+
+\item{model}{Model definition}
+}
 \description{
 This function returns a stan_model object.
 }

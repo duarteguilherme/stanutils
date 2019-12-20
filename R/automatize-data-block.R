@@ -21,7 +21,7 @@ create_declaration <- function(x, name) {
             name = name,
             minimum = floor(min(x)),
             maximum = ceiling(max(x)),
-            length = guess_length(x)
+            length = length(x)
             )
 }
 
@@ -31,12 +31,5 @@ test_numeric <- function(vec) {
             return(TRUE)
     }
     FALSE
-}
-
-guess_length <- function(x) {
-    n <- length(x)
-    if ( n == 1 )
-        return("")
-    paste0("[", n, "]")
 }
 

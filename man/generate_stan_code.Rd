@@ -13,3 +13,11 @@ generate_stan_code(stan_model)
 This functions gets a stan_model object
 and generate stan code from it.
 }
+\examples{
+stan_model <- create_stan_model()
+stan_model <- add_data(stan_model, declaration = "int", name = "test", 
+   minimum = 3, maximum = 5, length = 500)
+generate_stan_code(stan_model)
+
+
+}
